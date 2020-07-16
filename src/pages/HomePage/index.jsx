@@ -28,7 +28,7 @@ const HomePage = () => {
     }).then(({ data }) => {
       console.log(data);
       navigation.push('/render', data);
-    });
+    }).catch((err) => console.log(err));
     
   }, [navigation]);
   
