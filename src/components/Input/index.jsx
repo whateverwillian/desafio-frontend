@@ -6,7 +6,7 @@ import { Input } from './styles';
 const InputComponent = ({ name, ...rest }) => {
   const inputRef = React.useRef(null);
 
-  const { fieldName, defaultValue, registerField, error } = useField(name);
+  const { fieldName, defaultValue, registerField } = useField(name);
 
   React.useEffect(() => {
     registerField({

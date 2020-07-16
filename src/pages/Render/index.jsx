@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 import { Container, Title, Answer, Button, Wrapper } from './styles';
 
-const RenderComponent = ({ location: { state } }) => {
+const Render = ({ location: { state } }) => {
   const { 
     arrivedFirstAirport,
     arrivedAllTheAirports, 
@@ -29,4 +29,4 @@ const RenderComponent = ({ location: { state } }) => {
   )
 }
 
-export default RenderComponent;
+export default Render;
