@@ -13,10 +13,6 @@ const HomePage = () => {
   const navigation = useHistory();
   
   const handleSubmit = React.useCallback(({ airports, clouds, height, width, history }) => {
-
-    // O canvas precisa ser um quadrado
-    if (height !== width) return
-
     api.get('/', {
       params: {
         history,
